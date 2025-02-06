@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MATRÍCULA</title>
+	<!--<link rel="shortcut icon" href="/img/logoicon.png">-->
+	<style>
+	:root{
+		--main-bg-color: #FD0100;
+	}
+	.bgCorp{
+		background-color: #FD0100;
+	}
+	.bgSecond{
+		background-color: ;
+	}
+	.w190{width:190px;}
+	</style>
+	<link href="css/util.css?v=5a" rel="stylesheet" type="text/css">
+	<link href="css/calendar.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<script>
+	function validarLogoMenu(){
+		var h = document.getElementById('ip-logo').offsetHeight;
+		h = ((h/2)+(h/8));
+		document.getElementById('psp-name').setAttribute('style','top:'+h+'px');
+	}
+	</script>
+</head>
+<body onload="loadRedimencionar()">
+	<div class="principal">
+		<div id="navigation" class="navigation no-imprimir">
+			
+<p name="psp-vencimiento" class="abs w-100 p10 fs12" style="bottom:0px"></p>
+<p class="rel wl-100 fs12 txtCenter h45" style="background:#FD0100">
+	<img id="ip-logo" class="w-100 mano animate__animated animate__heartBeat" src="img/logo/21401menu.png?v=1a" onload="validarLogoMenu()" title="">
+	<input type="hidden" name="ih-fecha-actual" value="2025-02-06">
+	<input type="hidden" name="ih-idpersonal" value="26498">
+	<input type="hidden" name="ih-idadmin" value="21401">
+	<input type="hidden" name="ih-vencido" value="0">
+	<input type="hidden" name="ih-nombre-usuario" value="GRECIA">
+	<p id="psp-name" class="abs txtCenter w-100"><span class="fs12" style="color:#fff" title="">GRECIA</span><br><a href="exit"><img class="w15 imgMiddle mano" src="img/svg/exit.svg?v=0" title="Cerrar sesión"></a></p>
+</p>
+<ul class="ulNavigation">
+	<li class="oculto ulSelected">
+		<a href="/matricula">
+			<p class="fLeft w50 h30 txtCenter"><img class="w30" src="img/svg/matricula.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Matrícula</span></p>
+		</a>
+	</li>
+	<li class="oculto oculto">
+		<a href="/perfil">
+			<p class="fLeft w50 h30 txtCenter"><img class="w30" src="img/svg/user.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Perfil</span></p>
+		</a>
+	</li>
+	<li class="">
+		<a href="/usuarios">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/user.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Usuarios</span></p>
+		</a>
+	</li>
+	<li class="">
+		<a href="/asistencias">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/clock.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Asistencias</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/carnet">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25 pt10" src="img/svg/code.svg?v=0"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Carnet</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/libros">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/book.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Libros</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/aula">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/book.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Aula virtual</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/tareas">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/list2.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Tareas</span></p>
+			<span class="abs" style="right:10px;top:16px"></span>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/simulacros">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/exam.svg"></p><input type="hidden" value="usuarios;asistencias">
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Simulacros</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/examensemanal">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/list0.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Examen semanal</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/examendiario">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/list1.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Examen diario</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/practicas">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/list1.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Prácticas</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/encuesta">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/list7.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Encuesta</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/chatbot">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/chatbot.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Chatbot</span><strong name="ss-fichas"></strong></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/ciclos">
+			<p class="fLeft w50 h30 txtCenter"><img class="w23" src="img/svg/calendar.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Ciclos</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/sedes">
+			<p class="fLeft w50 h30 txtCenter"><img class="w28" src="img/svg/company.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Sedes</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/pagos">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/dollar.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Pagos</span></p>
+		</a>
+	</li>
+	<li class="oculto">
+		<a href="/tutorial">
+			<p class="fLeft w50 h30 txtCenter"><img class="w25" src="img/svg/pdf.svg"></p>
+			<p class="fLeft h30" style="width: calc(100% - 50px)"><span>Tutorial</span></p>
+		</a>
+	</li>
+</ul>		</div>
+		<div id="contenido" class="contenido bgBlanco">
+			<div id="resultado" class="rel w-100">
+				<div id="dh-header" class="w-100 rel bgCorp h50 oculto no-imprimir">
+					<img class="abs h45 mano imgBlanco" style="top:3px;left:10px" src="/img/logo/21401print.png" title="Menú principal" onclick="mostrarBotonMenu()">
+					<a href="exit"><img class="abs h25 mano imgBlanco" style="top:12px;right:10px" src="/img/svg/exit.svg" title="Cerrar sesión"></a>
+					<img class="abs h25 mano imgBlanco" style="top:12px;right:70px" src="/img/svg/nav.svg?v=1" title="Menú principal" onclick="mostrarBotonMenu()">
+				</div>
+				<div name="dc-recibo" class="w-100"></div>
+			</div>
+		</div>
+	</div>
+	<div id="fondoModal" onclick="cerrarModal()" class="no-imprimir"></div>
+	<div id="contenidoModal"></div>
+	<div id="contenidoImprimir" class="si-imprimir fLeft w-100"></div>
+	<form class="oculto no-imprimir" enctype="multipart/form-data" method="post" action="/">
+		<input type="file" name="f-clave" onchange="validarClave(event)">
+	</form>
+	<input type="hidden" name="ih-visibilidad" value="oculto">
+	<input type="hidden" name="ih-url" value="https://amazondrive.cloud">
+	<input type="hidden" name="ih-date" value="2025-02-06">
+	<div name="dc-caja" class="abs w-100 txtCenter bgBlanco fs18 oculto" style="height:100vh;padding-top:250px;z-index:3">SELECCIONE<br><strong>SEDE A MATRICULAR</strong></div>
+	<div class="no-imprimir fix h40 w-100 fs13" style="bottom:0px;z-index:10">
+	<div class="abs h40 w-100 txtCenter" style="bottom:0px;z-index:5;padding-top:8px">
+		<span class="cBlanco" name="ms-turno">CAJA:&nbsp;&nbsp;</span>
+		<select name="sc-sede" class="seleccionar w200" onchange="seleccionarSede()">
+			<option value="0"> SELECCIONE SEDE</option><option value="45"> CHICLAYO</option><option value="46"> FERREÑAFE</option><option value="48"> LAMBAYEQUE</option>
+		</select>&nbsp;&nbsp;
+		<input type="hidden" name="sc-caja" value="0">
+		<input type="button" name="sc-bcerrar" class="btnAceptar" value="Cerrar" onclick="cerrarCaja()">
+	</div>
+	<div class="abs h40 w-100 txtCenter" style="bottom:0px;z-index:4;">
+		<img class="h40" src="/img/sistema/noche.png">
+	</div></div>
+	<script>
+	var queryString = window.location.search, urlParams = new URLSearchParams(queryString);
+	if(isMobile()){
+		if(!urlParams.get('first')){
+			document.getElementById('dt-header').classList.remove("bgCorp");
+			document.getElementById('dt-header').classList.add("bgSecond");
+			document.getElementById('dh-header').classList.remove("oculto");
+			document.getElementById('navigation').classList.add("oculto");
+			document.getElementsByClassName('ulNavigation')[0].setAttribute('style','bottom:70px');
+			document.getElementById('contenido').setAttribute('style','width:100%');
+		}else{
+			document.getElementsByClassName('ulNavigation')[0].setAttribute('style','bottom:70px');
+			document.getElementById('contenido').setAttribute('style','width:100%');
+			mostrarBotonMenu();
+		}
+	}else{
+		document.getElementById('navigation').setAttribute('style','width:220px');
+		document.getElementsByClassName('ulNavigation')[0].setAttribute('style','top:150px');
+		document.getElementById('contenido').setAttribute('style','width: calc(100% - 220px)');
+	}
+	validarLogoMenu();
+	function isMobile(){
+	  return (
+		(navigator.userAgent.match(/Android/i)) ||
+		(navigator.userAgent.match(/webOS/i)) ||
+		(navigator.userAgent.match(/iPhone/i)) ||
+		(navigator.userAgent.match(/iPod/i)) ||
+		(navigator.userAgent.match(/iPad/i)) ||
+		(navigator.userAgent.match(/BlackBerry/i))
+	  );
+	}
+	function mostrarBotonMenu(){
+		document.getElementsByClassName('principal')[0].removeAttribute('style');
+		document.getElementById('navigation').setAttribute('style','width:100%');
+		document.getElementById('navigation').classList.remove("oculto");
+		document.getElementById('contenido').classList.add("oculto");
+		validarLogoMenu();
+	}
+	function loadRedimencionar(){
+		if(widthSize() < 780){
+			if(!urlParams.get('first')){
+				document.getElementsByClassName('principal')[0].setAttribute('style','width:800px');
+			}
+		}
+	}
+	</script>
+	<script src="js/util.js?v=a1" type="text/javascript"></script>
+	<script src="js/calendar.js" type="text/javascript"></script>
+	<script src="js/administrador/matricula.js?v=1h" type="text/javascript"></script>
+	<script src="js/xlsx.full.min.js"></script>
+	<script src="js/FileSaver.min.js" lang="javascript"></script>
+	<script src='js/html2canvas.min.js'></script>
+	<script src='js/qrcode.min.js'></script>
+</body>
+</html>
